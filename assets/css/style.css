@@ -530,3 +530,5 @@ a {
 .footer-block p { margin-bottom: 0.5em; }
 
 .site-footer a:focus { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+.map-wrapper iframe { display: block; }
