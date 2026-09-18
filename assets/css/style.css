@@ -544,3 +544,5 @@ a {
 .cta .btn { margin-top: 0.4em; }
 
 .page-intro h1 { margin-bottom: 0.25em; }
+
+.product-card .image-placeholder { border-radius: 6px 6px 0 0; }
