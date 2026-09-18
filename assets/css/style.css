@@ -46,6 +46,8 @@ h3 {
 }
 
 p {
+  max-width: 75ch;
+
   margin-bottom: 1em;
 }
 
