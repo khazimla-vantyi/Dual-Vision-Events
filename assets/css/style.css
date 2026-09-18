@@ -33,6 +33,8 @@ h1 {
 }
 
 h2 {
+  line-height: 1.3;
+
   font-size: 1.9rem;
   margin-bottom: 0.6em;
 }
