@@ -502,3 +502,5 @@ a {
 .product-card:hover { transform: translateY(-3px); }
 
 .product-card { transition: transform 0.2s ease; }
+
+.btn:focus { outline: 3px solid rgba(201,162,39,0.35); outline-offset: 2px; }
