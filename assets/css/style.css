@@ -540,3 +540,5 @@ a {
 .featured { width: 100%; }
 
 .cta p { margin-left: auto; margin-right: auto; }
+
+.cta .btn { margin-top: 0.4em; }
