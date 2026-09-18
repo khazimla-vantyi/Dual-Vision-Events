@@ -514,3 +514,5 @@ a {
 .social-links a { text-decoration: underline; text-underline-offset: 2px; }
 
 .enquiry-form input, .enquiry-form textarea { background: #fff; }
+
+.enquiry-form textarea { resize: vertical; }
