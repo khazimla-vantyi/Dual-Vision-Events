@@ -142,7 +142,10 @@ a {
   margin: auto;
 }
 
+
 .hero h1,
+  font-weight: 700;
+
 .hero p {
   max-width: 650px;
 
