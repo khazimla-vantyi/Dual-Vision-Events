@@ -534,3 +534,5 @@ a {
 .map-wrapper iframe { display: block; }
 
 .why-card h3 { margin-bottom: 0.5em; }
+
+.why-card p { margin-bottom: 0; }
