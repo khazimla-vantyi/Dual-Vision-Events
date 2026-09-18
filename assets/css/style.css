@@ -518,3 +518,5 @@ a {
 .enquiry-form textarea { resize: vertical; }
 
 .enquiry-form input::placeholder, .enquiry-form textarea::placeholder { color: #777; }
+
+.product-card p { padding-left: 0.7em; padding-right: 0.7em; }
