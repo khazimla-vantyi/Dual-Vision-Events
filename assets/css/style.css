@@ -144,6 +144,8 @@ a {
 
 .hero h1,
 .hero p {
+  max-width: 650px;
+
   color: var(--cream);
 }
 
