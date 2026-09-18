@@ -497,3 +497,4 @@ a {
     margin-bottom: 0.4em;
   }
 }
+.why-card:hover { transform: translateY(-3px); }
