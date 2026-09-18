@@ -548,3 +548,5 @@ a {
 .product-card .image-placeholder { border-radius: 6px 6px 0 0; }
 
 .product-card .image-placeholder { min-height: 150px; }
+
+.product-card p:last-child { margin-bottom: 0; }
