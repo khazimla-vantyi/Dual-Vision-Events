@@ -185,7 +185,10 @@ a {
   color: var(--navy);
 }
 
+
 .why-us,
+  width: 100%;
+
 
 .featured,
 .cta {
