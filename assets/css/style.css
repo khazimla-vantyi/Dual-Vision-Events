@@ -57,6 +57,8 @@ a {
 }
 
 .site-header {
+  width: 100%;
+
   background: var(--navy);
   position: sticky;
   top: 0;
