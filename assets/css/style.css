@@ -512,3 +512,5 @@ a {
 .contact-list a { text-decoration: underline; text-underline-offset: 3px; }
 
 .social-links a { text-decoration: underline; text-underline-offset: 2px; }
+
+.enquiry-form input, .enquiry-form textarea { background: #fff; }
