@@ -546,3 +546,5 @@ a {
 .page-intro h1 { margin-bottom: 0.25em; }
 
 .product-card .image-placeholder { border-radius: 6px 6px 0 0; }
+
+.product-card .image-placeholder { min-height: 150px; }
