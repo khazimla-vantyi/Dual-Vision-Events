@@ -112,6 +112,8 @@ a {
 }
 
 .nav-toggle {
+  padding: 0.2em;
+
   display: none;
   background: none;
   border: none;
