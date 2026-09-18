@@ -230,6 +230,8 @@ a {
 }
 
 .featured-grid figcaption {
+  color: var(--navy);
+
   margin-top: 0.5em;
   font-weight: 500;
 }
