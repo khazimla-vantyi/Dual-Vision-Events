@@ -500,3 +500,5 @@ a {
 .why-card:hover { transform: translateY(-3px); }
 
 .product-card:hover { transform: translateY(-3px); }
+
+.product-card { transition: transform 0.2s ease; }
