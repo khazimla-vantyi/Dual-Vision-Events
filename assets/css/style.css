@@ -201,6 +201,8 @@ a {
 }
 
 .why-card {
+  height: 100%;
+
   background: white;
   padding: 1.5em;
   border-radius: 6px;
