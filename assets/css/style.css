@@ -98,6 +98,8 @@ a {
 }
 
 .main-nav a {
+  transition: color 0.2s ease, border-color 0.2s ease;
+
   color: var(--cream);
   padding: 0.3em 0;
   border-bottom: 2px solid transparent;
