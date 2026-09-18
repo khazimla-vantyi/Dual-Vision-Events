@@ -516,3 +516,5 @@ a {
 .enquiry-form input, .enquiry-form textarea { background: #fff; }
 
 .enquiry-form textarea { resize: vertical; }
+
+.enquiry-form input::placeholder, .enquiry-form textarea::placeholder { color: #777; }
