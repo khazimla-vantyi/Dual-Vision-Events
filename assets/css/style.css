@@ -77,6 +77,8 @@ a {
 }
 
 .logo {
+  letter-spacing: 0.2px;
+
   color: var(--cream);
   font-family: var(--heading);
   font-size: 1.4rem;
