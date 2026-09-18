@@ -510,3 +510,5 @@ a {
 .nav-toggle:focus { outline: 2px solid var(--gold); outline-offset: 3px; }
 
 .contact-list a { text-decoration: underline; text-underline-offset: 3px; }
+
+.social-links a { text-decoration: underline; text-underline-offset: 2px; }
