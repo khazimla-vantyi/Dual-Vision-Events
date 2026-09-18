@@ -538,3 +538,5 @@ a {
 .why-card p { margin-bottom: 0; }
 
 .featured { width: 100%; }
+
+.cta p { margin-left: auto; margin-right: auto; }
