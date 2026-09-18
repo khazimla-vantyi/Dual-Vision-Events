@@ -552,3 +552,5 @@ a {
 .product-card p:last-child { margin-bottom: 0; }
 
 .enquiry-form fieldset { min-width: 0; }
+
+.enquiry-form button:hover { background: transparent; color: var(--gold); }
