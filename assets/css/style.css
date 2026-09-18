@@ -123,6 +123,11 @@ a {
 }
 
 .hero {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: linear-gradient(rgba(22, 38, 74, 0.75), rgba(22, 38, 74, 0.75)),
               url('../images/tent.jpg') center/cover;
   color: var(--cream);
