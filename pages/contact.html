@@ -3,25 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Dual Vision Events in Bridgemead, Gqeberha.">
-  <title>Contact | Dual Vision Events</title>
+  <meta name="description" content="Contact Dual Vision Events for event equipment hire in Bridgemead, Gqeberha.">
+  <meta name="keywords" content="contact event hire Gqeberha, Dual Vision Events, event equipment hire">
+  <meta name="author" content="Dual Vision Events">
+  <title>Contact Dual Vision Events | Event Hire Gqeberha</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <header class="site-header">
     <div class="header-container">
       <a href="../index.html" class="logo">Dual<span>Vision</span> Events</a>
-      <nav class="main-nav" id="main-nav"><ul>
-        <li><a href="../index.html">Home</a></li><li><a href="../pages/about.html">About</a></li><li><a href="../pages/products.html">Catalogue</a></li><li><a href="../pages/contact.html" class="active">Contact</a></li><li><a href="../pages/enquiries.html">Enquiries</a></li>
-      </ul></nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Catalogue</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+          <li><a href="enquiries.html">Enquiries</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
   <main>
-    <section class="page-intro"><h1>Contact Us</h1><p>We would love to help with your next event. Reach out however suits you best.</p></section>
+    <section class="page-intro">
+      <h1>Contact Us</h1>
+      <p>Have a general question? Send Dual Vision Events a message.</p>
+    </section>
+
     <section class="content-block">
       <h2>Where To Find Us</h2>
       <p>8 Willowmore Road, Bridgemead, Gqeberha</p>
@@ -29,26 +43,68 @@
       <ul class="contact-list">
         <li>WhatsApp: <a href="https://wa.me/27683293957" target="_blank" rel="noopener">068 329 3957</a></li>
         <li>Email: <a href="mailto:dualvision.events@gmail.com">dualvision.events@gmail.com</a></li>
-        <li>Facebook: <a href="https://www.facebook.com/search/top/?q=DualVision%40Events" target="_blank" rel="noopener">DualVision@Events</a></li>
+        <li>Facebook: <a href="https://www.facebook.com/search/top/?q=DualVision%40Events" target="_blank" rel="noopener">Dual Vision Events</a></li>
         <li>TikTok: <a href="https://www.tiktok.com/@dualvisionevents" target="_blank" rel="noopener">Dual Vision Events</a></li>
       </ul>
     </section>
+
     <section class="content-block">
-      <h2>Map</h2>
-      <div class="map-wrapper">
-        <iframe src="https://www.google.com/maps?q=8+Willowmore+Road,+Bridgemead,+Gqeberha&output=embed" width="100%" height="350" style="border:0;" loading="lazy" title="Map showing 8 Willowmore Road, Bridgemead"></iframe>
-      </div>
+      <h2>Our Location</h2>
+      <div id="map" class="map-wrapper" role="region" aria-label="Interactive map showing the approximate business location"></div>
+      <p class="small-note">Please contact us to confirm the exact collection or delivery location.</p>
+    </section>
+
+    <section class="enquiry-wrapper">
+      <form class="enquiry-form" id="contact-form" action="mailto:dualvision.events@gmail.com" method="post" enctype="text/plain" novalidate>
+        <h2>Send a General Message</h2>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" minlength="2" maxlength="80" autocomplete="name" required>
+        <small class="error-msg" id="fullname-error" aria-live="polite"></small>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        <small class="error-msg" id="email-error" aria-live="polite"></small>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="0[0-9]{9}" maxlength="10" placeholder="0683293957" autocomplete="tel" required>
+        <small class="error-msg" id="phone-error" aria-live="polite"></small>
+
+        <label for="msgtype">Message Type</label>
+        <select id="msgtype" name="msgtype" required>
+          <option value="">Choose a message type</option>
+          <option value="General question">General question</option>
+          <option value="Feedback">Feedback</option>
+          <option value="Other">Other</option>
+        </select>
+        <small class="error-msg" id="msgtype-error" aria-live="polite"></small>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" minlength="10" maxlength="500" required></textarea>
+        <small class="error-msg" id="message-error" aria-live="polite"></small>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-success" class="success-message" role="status" style="display:none;"></p>
+        <p class="small-note">Your email application will open with the message prepared. You still need to press Send in your email application.</p>
+      </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-container">
-      <div class="footer-block"><h3>Dual Vision Events</h3><p>Equipment hire for weddings, parties &amp; functions in Gqeberha.</p></div>
+      <div class="footer-block"><h3>Dual Vision Events</h3><p>Equipment hire for weddings, parties and functions in Gqeberha.</p></div>
       <div class="footer-block"><h3>Find Us</h3><p>8 Willowmore Road, Bridgemead, Gqeberha</p></div>
-      <div class="footer-block"><h3>Follow &amp; Contact</h3><div class="social-links"><a href="https://wa.me/27683293957" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.facebook.com/search/top/?q=DualVision%40Events" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@dualvisionevents" target="_blank" rel="noopener">TikTok</a><a href="mailto:dualvision.events@gmail.com">Email</a></div></div>
+      <div class="footer-block"><h3>Follow &amp; Contact</h3><div class="social-links">
+        <a href="https://wa.me/27683293957" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.facebook.com/search/top/?q=DualVision%40Events" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.tiktok.com/@dualvisionevents" target="_blank" rel="noopener">TikTok</a>
+        <a href="mailto:dualvision.events@gmail.com">Email</a>
+      </div></div>
     </div>
     <p class="footer-bottom">&copy; 2026 Dual Vision Events. All rights reserved.</p>
   </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/contact.js"></script>
 </body>
 </html>

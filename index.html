@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic page setup -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dual Vision Events equipment hire for weddings, parties and functions in Gqeberha.">
-  <title>Home | Dual Vision Events</title>
+  <meta name="description" content="Hire event equipment for weddings, parties and functions in Gqeberha from Dual Vision Events.">
+  <meta name="keywords" content="event equipment hire Gqeberha, Dual Vision Events, tents, chairs, tables">
+  <meta name="author" content="Dual Vision Events">
+  <title>Dual Vision Events | Event Equipment Hire in Gqeberha</title>
+
+  <!-- Google Font used for headings (loaded from Google Fonts CDN) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- One shared stylesheet for the whole site -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:,">
 </head>
 <body>
+  <!-- ============ SITE HEADER / NAVIGATION ============ -->
   <header class="site-header">
     <div class="header-container">
       <a href="index.html" class="logo">Dual<span>Vision</span> Events</a>
-      <nav class="main-nav" id="main-nav">
+
+      <!-- Main navigation links -->
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="pages/about.html">About</a></li>
@@ -22,19 +33,23 @@
           <li><a href="pages/enquiries.html">Enquiries</a></li>
         </ul>
       </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+
+      <!-- Hamburger button, only shown on small screens via CSS -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
   <main>
+    <!-- Hero / welcome banner -->
     <section class="hero">
       <div class="hero-content">
         <h1>Bringing Your Events to Life</h1>
-        <p>Dual Vision Events supplies tents, furniture, catering and decor equipment for weddings, parties and functions across Gqeberha.</p>
+        <p>Dual Vision Events supplies tents, furniture, catering and decor
+          equipment for weddings, parties and functions across Gqeberha.</p>
         <a href="pages/products.html" class="btn">View Our Catalogue</a>
       </div>
     </section>
-
+    <!-- Short list explaining why customers should hire from us -->
     <section class="why-us">
       <h2>Why Hire From Us</h2>
       <div class="why-grid">
@@ -44,7 +59,7 @@
         </div>
         <div class="why-card">
           <h3>Local &amp; Personal</h3>
-          <p>Based in Bridgemead, Gqeberha, making it easy to visit and talk to us directly.</p>
+          <p>Based right here in Bridgemead, Gqeberha -- easy to visit and talk to us directly.</p>
         </div>
         <div class="why-card">
           <h3>Full Event Support</h3>
@@ -52,17 +67,26 @@
         </div>
       </div>
     </section>
-
+    <!-- A small preview of the catalogue, with a link to see everything -->
     <section class="featured">
       <h2>Popular Equipment</h2>
       <div class="featured-grid">
-        <figure><div class="image-placeholder">Marquee Tent</div><figcaption>Marquee Tents</figcaption></figure>
-        <figure><div class="image-placeholder">Chiavari Chairs</div><figcaption>Chiavari Chairs</figcaption></figure>
-        <figure><div class="image-placeholder">Red Carpet</div><figcaption>Decor &amp; Carpets</figcaption></figure>
+        <figure>
+          <img src="assets/images/tent.jpg" alt="White marquee tent set up for an outdoor event">
+          <figcaption>Marquee Tents</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/black-chairs.jpg" alt="Rows of black chiavari chairs">
+          <figcaption>Chiavari Chairs</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/red-carpet.jpg" alt="Red carpet runner laid out for an event entrance">
+          <figcaption>Decor &amp; Carpets</figcaption>
+        </figure>
       </div>
       <a href="pages/products.html" class="btn">See Full Catalogue &amp; Prices</a>
     </section>
-
+    <!-- Call to action encouraging visitors to send an enquiry -->
     <section class="cta">
       <h2>Planning An Event?</h2>
       <p>Send us your enquiry and we will help you put it all together.</p>
@@ -70,6 +94,7 @@
     </section>
   </main>
 
+  <!-- ============ SITE FOOTER ============ -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-block">
@@ -92,6 +117,8 @@
     </div>
     <p class="footer-bottom">&copy; 2026 Dual Vision Events. All rights reserved.</p>
   </footer>
+
+  <!-- Shared script (handles the mobile nav toggle) -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>

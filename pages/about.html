@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic page setup -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The story, vision and mission behind Dual Vision Events in Gqeberha.">
-  <title>About Us | Dual Vision Events</title>
+  <meta name="description" content="Learn about Dual Vision Events, an event equipment hire business based in Bridgemead, Gqeberha.">
+  <meta name="keywords" content="event equipment hire Gqeberha, Dual Vision Events, tents, chairs, tables">
+  <meta name="author" content="Dual Vision Events">
+  <title>About Dual Vision Events | Gqeberha</title>
+
+  <!-- Google Font used for headings (loaded from Google Fonts CDN) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- One shared stylesheet for the whole site -->
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:,">
 </head>
 <body>
+  <!-- ============ SITE HEADER / NAVIGATION ============ -->
   <header class="site-header">
     <div class="header-container">
       <a href="../index.html" class="logo">Dual<span>Vision</span> Events</a>
-      <nav class="main-nav" id="main-nav">
+
+      <!-- Main navigation links -->
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../pages/about.html" class="active">About</a></li>
@@ -22,34 +33,67 @@
           <li><a href="../pages/enquiries.html">Enquiries</a></li>
         </ul>
       </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+
+      <!-- Hamburger button, only shown on small screens via CSS -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
   <main>
-    <section class="page-intro"><h1>About Dual Vision Events</h1></section>
+    <section class="page-intro">
+      <h1>About Dual Vision Events</h1>
+    </section>
+
+    <!-- Background story -->
     <section class="content-block">
       <h2>Our Background</h2>
-      <p>Dual Vision Events was started right here in Gqeberha. After dreaming about running our own business, we decided to build a company that helps people bring their events to life, from small family gatherings to full weddings and functions.</p>
+      <p>Dual Vision Events was started right here in Gqeberha. After years of
+        dreaming about running my own business, I decided to build a company
+        that helps people bring their events to life -- from small family
+        gatherings to full weddings and functions. What began as an idea has
+        grown into a hands-on equipment hire service for our community.</p>
     </section>
+    <!-- Vision statement -->
     <section class="content-block alt">
       <h2>Our Vision</h2>
-      <p>To be a trusted event equipment hire company in Gqeberha, known for reliable service and helping every client's event look the way they imagined it.</p>
+      <p>To be Gqeberha's most trusted event equipment hire company, known for
+        reliable service and helping every client's event look exactly the
+        way they imagined it.</p>
     </section>
+    <!-- Mission statement -->
     <section class="content-block">
       <h2>Our Mission</h2>
-      <p>To provide well maintained, affordable equipment and friendly, personal service so that our clients can focus on enjoying their event instead of worrying about the setup.</p>
+      <p>To provide well maintained, affordable equipment and friendly,
+        personal service so that our clients can focus on enjoying their
+        event instead of worrying about the setup.</p>
     </section>
   </main>
 
+  <!-- ============ SITE FOOTER ============ -->
   <footer class="site-footer">
     <div class="footer-container">
-      <div class="footer-block"><h3>Dual Vision Events</h3><p>Equipment hire for weddings, parties &amp; functions in Gqeberha.</p></div>
-      <div class="footer-block"><h3>Find Us</h3><p>8 Willowmore Road, Bridgemead, Gqeberha</p></div>
-      <div class="footer-block"><h3>Follow &amp; Contact</h3><div class="social-links"><a href="https://wa.me/27683293957" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.facebook.com/search/top/?q=DualVision%40Events" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@dualvisionevents" target="_blank" rel="noopener">TikTok</a><a href="mailto:dualvision.events@gmail.com">Email</a></div></div>
+      <div class="footer-block">
+        <h3>Dual Vision Events</h3>
+        <p>Equipment hire for weddings, parties &amp; functions in Gqeberha.</p>
+      </div>
+      <div class="footer-block">
+        <h3>Find Us</h3>
+        <p>8 Willowmore Road, Bridgemead, Gqeberha</p>
+      </div>
+      <div class="footer-block">
+        <h3>Follow &amp; Contact</h3>
+        <div class="social-links">
+          <a href="https://wa.me/27683293957" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.facebook.com/search/top/?q=DualVision%40Events" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/@dualvisionevents" target="_blank" rel="noopener">TikTok</a>
+          <a href="mailto:dualvision.events@gmail.com">Email</a>
+        </div>
+      </div>
     </div>
     <p class="footer-bottom">&copy; 2026 Dual Vision Events. All rights reserved.</p>
   </footer>
+
+  <!-- Shared script (handles the mobile nav toggle) -->
   <script src="../assets/js/script.js"></script>
 </body>
 </html>

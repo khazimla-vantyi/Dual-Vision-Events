@@ -1,54 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Basic page setup -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Browse Dual Vision Events equipment available for hire.">
-  <title>Catalogue | Dual Vision Events</title>
+
+  <!-- SEO: a unique title and description for this page -->
+  <title>Equipment Hire Catalogue Gqeberha | Dual Vision Events</title>
+  <meta name="description"
+    content="Hire marquee tents, chairs, tables, gas stoves, cold rooms and portable toilets in Gqeberha. Browse daily prices from Dual Vision Events.">
+  <meta name="keywords" content="event hire Gqeberha, marquee tent hire, chair hire, wedding equipment hire, portable toilet hire">
+  <meta name="author" content="Dual Vision Events">
+  <meta name="author" content="Dual Vision Events">
+
+  <!-- Google Font used for headings (loaded from Google Fonts CDN) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- One shared stylesheet for the whole site -->
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:,">
 </head>
+
 <body>
+  <!-- ============ SITE HEADER / NAVIGATION ============ -->
   <header class="site-header">
     <div class="header-container">
       <a href="../index.html" class="logo">Dual<span>Vision</span> Events</a>
-      <nav class="main-nav" id="main-nav"><ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/about.html">About</a></li>
-        <li><a href="../pages/products.html" class="active">Catalogue</a></li>
-        <li><a href="../pages/contact.html">Contact</a></li>
-        <li><a href="../pages/enquiries.html">Enquiries</a></li>
-      </ul></nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+
+      <!-- Main navigation links -->
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/products.html" class="active">Catalogue</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+          <li><a href="../pages/enquiries.html">Enquiries</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger button, only shown on small screens via CSS -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
     </div>
   </header>
 
   <main>
+    <!-- Page heading (only one H1 on the page, good for SEO) -->
     <section class="page-intro">
-      <h1>Equipment Catalogue</h1>
-      <p>Browse what we have available. Prices are per day of hire. Contact us for multi-day rates or full event packages.</p>
+      <h1>Equipment Hire Catalogue</h1>
+      <p>Browse what we have available. Prices are per day of hire -- get in
+        touch for multi-day rates or full event packages.</p>
     </section>
-    <div class="product-grid">
-      <div class="product-card"><div class="image-placeholder">Marquee Tent</div><h3>Marquee Tent (6m x 12m)</h3><p class="price">R2 500 / day</p><p>White marquee, perfect for weddings and outdoor functions.</p></div>
-      <div class="product-card"><div class="image-placeholder">Chiavari Chairs</div><h3>Black Chiavari Chairs</h3><p class="price">R25 / day each</p><p>Elegant black chiavari chairs, hired individually or in bulk.</p></div>
-      <div class="product-card"><div class="image-placeholder">Trestle Tables</div><h3>Trestle Tables</h3><p class="price">R120 / day</p><p>Sturdy trestle tables, seats up to 6 guests.</p></div>
-      <div class="product-card"><div class="image-placeholder">Red Carpet</div><h3>Red Carpet Runway</h3><p class="price">R350 / day</p><p>Roll-out red carpet for a grand event entrance.</p></div>
-      <div class="product-card"><div class="image-placeholder">Gas Stove</div><h3>3-Plate Gas Stove</h3><p class="price">R400 / day</p><p>Portable gas stove for on-site catering.</p></div>
-      <div class="product-card"><div class="image-placeholder">Cold Room</div><h3>Mobile Cold Room</h3><p class="price">R1 800 / day</p><p>Trailer-mounted cold room to keep food and drinks chilled.</p></div>
-      <div class="product-card"><div class="image-placeholder">Portable Toilets</div><h3>Portable Toilet Unit</h3><p class="price">R550 / day</p><p>Clean, self-contained portable toilets for guests.</p></div>
-      <div class="product-card"><div class="image-placeholder">Urns & Pots</div><h3>Tea Urns &amp; Potjie Pots</h3><p class="price">R150 / day</p><p>Large urns for tea/coffee and cast iron potjie pots for catering.</p></div>
+
+    <!-- ============ SEARCH, FILTER AND SORT ============ -->
+    <section class="filter-bar" aria-label="Search and filter equipment">
+      <!-- Search box: filters cards as the user types -->
+      <div class="filter-item">
+        <label for="search-box">Search</label>
+        <input type="text" id="search-box" placeholder="e.g. chairs, tent, stove">
+      </div>
+
+      <!-- Category dropdown: shows only one type of equipment -->
+      <div class="filter-item">
+        <label for="category-filter">Category</label>
+        <select id="category-filter">
+          <option value="all">All categories</option>
+          <option value="structures">Structures</option>
+          <option value="furniture">Furniture</option>
+          <option value="decor">Decor</option>
+          <option value="catering">Catering</option>
+          <option value="facilities">Facilities</option>
+        </select>
+      </div>
+
+      <!-- Sort dropdown: changes the order of the cards -->
+      <div class="filter-item">
+        <label for="sort-select">Sort by</label>
+        <select id="sort-select">
+          <option value="default">Default order</option>
+          <option value="name">Name (A-Z)</option>
+          <option value="price-low">Price (low to high)</option>
+          <option value="price-high">Price (high to low)</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- These two messages are updated by JavaScript -->
+    <p id="result-count" class="result-count"></p>
+    <p id="no-results" class="no-results" hidden>
+      No equipment matches your search. Try a different word or category.
+    </p>
+
+    <!-- ============ PRODUCT GRID ============ -->
+    <!-- Each card has data- attributes that the JavaScript uses for filtering and sorting -->
+    <div class="product-grid" id="product-grid">
+      <div class="product-card" data-name="Marquee Tent" data-category="structures" data-price="2500" data-order="1">
+        <img class="zoomable" src="../assets/images/tent.jpg" alt="Large white marquee tent set up outdoors"
+          loading="lazy" tabindex="0">
+        <h3>Marquee Tent (6m x 12m)</h3>
+        <p class="price">R2 500 / day</p>
+        <p>White marquee, perfect for weddings and outdoor functions.</p>
+      </div>
+
+      <div class="product-card" data-name="Black Chiavari Chairs" data-category="furniture" data-price="25"
+        data-order="2">
+        <img class="zoomable" src="../assets/images/black-chairs.jpg" alt="Rows of black chiavari chairs"
+          loading="lazy" tabindex="0">
+        <h3>Black Chiavari Chairs</h3>
+        <p class="price">R25 / day each</p>
+        <p>Elegant black chiavari chairs, hired individually or in bulk.</p>
+      </div>
+
+      <div class="product-card" data-name="Trestle Tables" data-category="furniture" data-price="120" data-order="3">
+        <img class="zoomable" src="../assets/images/table.jpg" alt="Wooden trestle table" loading="lazy"
+          tabindex="0">
+        <h3>Trestle Tables</h3>
+        <p class="price">R120 / day</p>
+        <p>Sturdy trestle tables, seats up to 6 guests.</p>
+      </div>
+
+      <div class="product-card" data-name="Red Carpet Runway" data-category="decor" data-price="350" data-order="4">
+        <img class="zoomable" src="../assets/images/red-carpet.jpg" alt="Red carpet runner laid out for an event"
+          loading="lazy" tabindex="0">
+        <h3>Red Carpet Runway</h3>
+        <p class="price">R350 / day</p>
+        <p>Roll-out red carpet for a grand event entrance.</p>
+      </div>
+
+      <div class="product-card" data-name="3-Plate Gas Stove" data-category="catering" data-price="400"
+        data-order="5">
+        <img class="zoomable" src="../assets/images/gas-stove.jpg" alt="Three-plate gas stove" loading="lazy"
+          tabindex="0">
+        <h3>3-Plate Gas Stove</h3>
+        <p class="price">R400 / day</p>
+        <p>Portable gas stove for on-site catering.</p>
+      </div>
+
+      <div class="product-card" data-name="Mobile Cold Room" data-category="catering" data-price="1800"
+        data-order="6">
+        <img class="zoomable" src="../assets/images/mobile-cold-room.jpg" alt="Mobile cold room trailer"
+          loading="lazy" tabindex="0">
+        <h3>Mobile Cold Room</h3>
+        <p class="price">R1 800 / day</p>
+        <p>Trailer-mounted cold room to keep food and drinks chilled.</p>
+      </div>
+
+      <div class="product-card" data-name="Portable Toilet Unit" data-category="facilities" data-price="550"
+        data-order="7">
+        <img class="zoomable" src="../assets/images/toilets.jpg" alt="Portable toilet units" loading="lazy"
+          tabindex="0">
+        <h3>Portable Toilet Unit</h3>
+        <p class="price">R550 / day</p>
+        <p>Clean, self-contained portable toilets for guests.</p>
+      </div>
+
+      <div class="product-card" data-name="Tea Urns and Potjie Pots" data-category="catering" data-price="150"
+        data-order="8">
+        <img class="zoomable" src="../assets/images/urn-and-pots.jpg" alt="Tea urns and potjie pots" loading="lazy"
+          tabindex="0">
+        <h3>Tea Urns &amp; Potjie Pots</h3>
+        <p class="price">R150 / day</p>
+        <p>Large urns for tea/coffee and cast iron potjie pots for catering.</p>
+      </div>
     </div>
+
+    <!-- ============ HIRE FAQ (ACCORDION) ============ -->
+    <!-- Click a question to open or close its answer -->
+    <section class="faq">
+      <h2>Hire Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1">How do I book equipment?</button>
+        <div class="faq-answer" id="faq-answer-1" hidden>
+          <p>Send us an <a href="../pages/enquiries.html">enquiry</a> with your event date and the items you need,
+            and we will confirm availability and a full quote.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">Do you deliver?</button>
+        <div class="faq-answer" id="faq-answer-2" hidden>
+          <p>Yes, we deliver and collect around Gqeberha. Delivery fees depend on distance, so please
+            <a href="../pages/contact.html">contact us</a> for a price.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">Are the prices per day?</button>
+        <div class="faq-answer" id="faq-answer-3" hidden>
+          <p>Yes. All prices shown are per day of hire. Ask us about multi-day rates and event packages.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- ============ LIGHTBOX (hidden until an image is clicked) ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Product image preview" hidden>
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <!-- ============ SITE FOOTER ============ -->
   <footer class="site-footer">
     <div class="footer-container">
-      <div class="footer-block"><h3>Dual Vision Events</h3><p>Equipment hire for weddings, parties &amp; functions in Gqeberha.</p></div>
-      <div class="footer-block"><h3>Find Us</h3><p>8 Willowmore Road, Bridgemead, Gqeberha</p></div>
-      <div class="footer-block"><h3>Follow &amp; Contact</h3><div class="social-links"><a href="https://wa.me/27683293957" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.facebook.com/search/top/?q=DualVision%40Events" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@dualvisionevents" target="_blank" rel="noopener">TikTok</a><a href="mailto:dualvision.events@gmail.com">Email</a></div></div>
+      <div class="footer-block">
+        <h3>Dual Vision Events</h3>
+        <p>Equipment hire for weddings, parties &amp; functions in Gqeberha.</p>
+      </div>
+      <div class="footer-block">
+        <h3>Find Us</h3>
+        <p>8 Willowmore Road, Bridgemead, Gqeberha</p>
+      </div>
+      <div class="footer-block">
+        <h3>Follow &amp; Contact</h3>
+        <div class="social-links">
+          <a href="https://wa.me/27683293957" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.facebook.com/search/top/?q=DualVision%40Events" target="_blank"
+            rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/@dualvisionevents" target="_blank" rel="noopener">TikTok</a>
+          <a href="mailto:dualvision.events@gmail.com">Email</a>
+        </div>
+      </div>
     </div>
     <p class="footer-bottom">&copy; 2026 Dual Vision Events. All rights reserved.</p>
   </footer>
+
+  <!-- Shared script (handles the mobile nav toggle) -->
   <script src="../assets/js/script.js"></script>
+  <!-- Catalogue-only script (search, filter, sort, lightbox, FAQ) -->
+  <script src="../assets/js/products.js"></script>
 </body>
+
 </html>
