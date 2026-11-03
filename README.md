@@ -39,8 +39,6 @@ DualVisionEvents/
     js/contact.js
     images/
   README.md
-  CHANGELOG.md
-  references.md
 ```
 
 ## How to run the website
